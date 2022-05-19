@@ -43,7 +43,7 @@ export default {
       )
       .then(() =>
         L.tileLayer(
-          "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoibml0cm9jYXQyMiIsImEiOiJjbDBqZWV1bDgwNTZvM21wOGkxajA3M3A2In0.DlgfsqJwmBNvu31_S4Khmg",
+          "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
           {
             attribution:
               'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -52,7 +52,7 @@ export default {
             tileSize: 512,
             zoomOffset: -1,
             accessToken:
-              "pk.eyJ1Ijoibml0cm9jYXQyMiIsImEiOiJjbDBqZWV1bDgwNTZvM21wOGkxajA3M3A2In0.DlgfsqJwmBNvu31_S4Khmg",
+              import.meta.env.VITE_MAPBOX_KEY,
           }
         ).addTo(map)
       )
