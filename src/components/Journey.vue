@@ -153,7 +153,7 @@ export default {
     <div id="column1">
       <h1>Journey</h1>
       <h2>Name: {{ journey.name }}</h2>
-      <h2>Skater: {{ journey.skaterID }}</h2>
+      <h2>Skater: nitrocat22</h2>
     </div>
     <div id="column2">
       <h1>Speed</h1>
